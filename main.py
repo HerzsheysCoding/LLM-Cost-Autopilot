@@ -2,8 +2,8 @@ import httpx
 import tiktoken
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import JSONResponse, StreamingResponse
-from cache.vector_store import RedisSemanticCache
-from core.budget import BudgetEnforcer
+from vector_store import RedisSemanticCache
+from budget import BudgetEnforcer
 
 app = FastAPI(title="LLM Cost Autopilot Gateway")
 cache = RedisSemanticCache()
