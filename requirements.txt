@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+redis
+sentence-transformers
+numpy
+tiktoken
+httpx
+pydantic
